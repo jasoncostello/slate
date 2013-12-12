@@ -151,6 +151,22 @@ blockquote {
 ul, ol, dl {
   margin: 0 0 15px 0;
   padding-left: 20px;
+  counter-reset: section;
+  counter-increment: item;
+}
+
+ol {
+  list-style: none;
+  padding-left: 0;
+} 
+
+ol>li:before {
+  float: left;
+  display: inline-block;
+  margin-right: 10px;
+  font-weight:bold;
+  text-align:right;
+  content:counter(item) ".";
 }
 
 dl dt {
