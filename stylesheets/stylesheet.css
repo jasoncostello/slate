@@ -73,17 +73,15 @@ footer p {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
-  color: #007edf;
+  border-bottom: 1px dotted #666;
+  color: inherit;
   text-shadow: none;
 }
 
-a:hover, a:focus {text-decoration: underline;}
+a:hover, a:focus {border-bottom: 1px solid #0090ff;}
 
-footer a {
-  color: #F2F2F2;
-  text-decoration: underline;
-}
 
 em {
   font-style: italic;
@@ -235,6 +233,10 @@ Full-Width Styles
   border-bottom-right-radius: 2px;
 }
 
+header {
+  color: #f2f2f2;
+}
+
 #header_wrap {
   background: #212121;
 }
@@ -260,16 +262,19 @@ Full-Width Styles
 }
 
 .downloads {
-  padding-left: 80px;
-  background: #f2f2f2;
+  padding-left: 50px;
+  color: #f2f2f2;
   position: relative;
   height: 70px;
   background: url(../images/download.svg) no-repeat center left;
-  background-size: 50px 40px;
+  background-size: 25px 20px;
 }
 
 .downloads a {
   margin-right: 20px;
+}
+.downloads a:hover {
+  border-bottom: 1px solid #0090ff;
 }
 
 #main_content_wrap {
@@ -282,7 +287,7 @@ Full-Width Styles
 
 #main_content.inner {
   background-color: #fff;
-  padding: 70px
+  padding: 70px 100px;
 }
 
 #footer_wrap {
