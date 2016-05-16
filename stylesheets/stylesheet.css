@@ -234,10 +234,11 @@ Full-Width Styles
   background: url('../images/blacktocat.svg') #0090ff no-repeat 8% 50%;
   background-size: 25px;
   font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border: none;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
+
 
 header {
   color: #f2f2f2;
