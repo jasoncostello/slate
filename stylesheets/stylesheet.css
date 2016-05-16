@@ -236,7 +236,6 @@ Full-Width Styles
   background-color: #1883ed;
 }
 
-
 header {
   color: #f2f2f2;
 }
@@ -254,7 +253,6 @@ header {
   color: #fff;
   font-size: 54px;
   font-weight: 700;
-  text-shadow: #111 0px 0px 10px;
 }
 
 #project_tagline {
@@ -262,7 +260,6 @@ header {
   font-size: 36px;
   font-weight: 300;
   background: none;
-  text-shadow: #111 0px 0px 10px;
 }
 
 .downloads {
@@ -280,10 +277,6 @@ header {
 }
 .downloads a:hover {
   text-decoration: underline solid #fff;
-}
-
-#main_content_wrap {
-
 }
 
 #main_content {
@@ -310,16 +303,24 @@ Small Device Styles
 
 @media screen and (max-width: 480px) {
   body {
-    font-size:14px;
+    font-size: 14px;
   }
 
-  #downloads {
+  .downloads {
     display: none;
   }
 
   .inner {
     min-width: 320px;
     max-width: 480px;
+  }
+
+  #header_wrap .inner {
+    padding: 60px 10px;
+  }
+
+  #main_content.inner {
+    padding: 10px;
   }
 
   #project_title {
@@ -354,5 +355,9 @@ Small Device Styles
     min-width: 320px;
     max-width: 480px;
     font-size: 11px;
+  }
+
+  img {
+    max-width: 100%;
   }
 }
