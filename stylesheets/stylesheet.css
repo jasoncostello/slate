@@ -102,7 +102,6 @@ img {
   max-width: 739px;
   padding: 5px;
   margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb;
 
   box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 5px #ebebeb;
@@ -122,21 +121,18 @@ p img {
 
 pre, code {
   width: 100%;
-  color: #222;
-  background-color: #fff;
+  color: #fff;
+  background-color: #222;
 
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 14px;
 
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
 
   box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
 pre {
-  padding: 10px;
+  padding: 10px 20px;
   overflow: auto;
 }
 
@@ -192,15 +188,14 @@ table {
  }
 
 th {
-  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
-  background: #373737;
+  background: #222;
   color: #fff;
  }
 
 td {
   padding: 10px;
-  border: 1px solid #373737;
+  border: 1px solid #222;
  }
 
 form {
@@ -298,6 +293,11 @@ header {
 #main_content.inner {
   background-color: #fff;
   padding: 70px 100px;
+  box-shadow: 0 0 5px #ebebeb;
+  -webkit-box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  -o-box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  -ms-box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
 }
 
 #footer_wrap {
