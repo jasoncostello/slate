@@ -56,14 +56,20 @@ h3 {
 }
 
 h4 {
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-size: 21px;
 }
 
 h5 {
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-size: 18px;
 }
 
 h6 {
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-size: 16px;
 }
 
