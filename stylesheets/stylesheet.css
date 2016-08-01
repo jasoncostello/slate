@@ -20,49 +20,63 @@ body {
   color:#373737;
   background: #212121;
   font-size: 18px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   margin: 10px 0;
   font-weight: 700;
   color:#222222;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
-  letter-spacing: -1px;
 }
 
 h1 {
+  margin-bottom: 20px;
   font-size: 36px;
+  line-height: 1.1;
   font-weight: 700;
 }
 
+h1#project_title {
+  text-transform: uppercase;
+}
+
 h2 {
-  padding-bottom: 10px;
   font-size: 32px;
-  background: url('../images/bg_hr.png') repeat-x bottom;
+  line-height: 1.2;
 }
 
 h3 {
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-size: 24px;
+  line-height: 1.3;
 }
 
 h4 {
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-size: 21px;
 }
 
 h5 {
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-size: 18px;
 }
 
 h6 {
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-size: 16px;
 }
 
 p {
+  font-family: "Roboto Slab",
   font-size: 18px;
-  margin: 10px 0 15px 0;
+  margin: 0px 0 15px 0;
 }
 
 footer p {
@@ -70,17 +84,15 @@ footer p {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
-  color: #007edf;
+  border-bottom: 1px dotted #666;
+  color: inherit;
   text-shadow: none;
 }
 
-a:hover, a:focus {text-decoration: underline;}
+a:hover, a:focus {border-bottom: 1px solid #0090ff;}
 
-footer a {
-  color: #F2F2F2;
-  text-decoration: underline;
-}
 
 em {
   font-style: italic;
@@ -96,7 +108,6 @@ img {
   max-width: 739px;
   padding: 5px;
   margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb;
 
   box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 5px #ebebeb;
@@ -116,21 +127,18 @@ p img {
 
 pre, code {
   width: 100%;
-  color: #222;
-  background-color: #fff;
+  color: #fff;
+  background-color: #222;
 
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 14px;
 
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
 
   box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
 pre {
-  padding: 10px;
+  padding: 10px 20px;
   overflow: auto;
 }
 
@@ -186,15 +194,14 @@ table {
  }
 
 th {
-  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
-  background: #373737;
+  background: #222;
   color: #fff;
  }
 
 td {
   padding: 10px;
-  border: 1px solid #373737;
+  border: 1px solid #222;
  }
 
 form {
@@ -208,11 +215,12 @@ Full-Width Styles
 
 .outer {
   width: 100%;
+  padding: 0 10px;
 }
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 960px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -223,13 +231,20 @@ Full-Width Styles
   top:0;
   right: 10px;
   z-index: 10;
-  padding: 10px 50px 10px 10px;
+  padding: 10px 20px 10px 50px;
   color: #fff;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  background: url('../images/blacktocat.svg') #0090ff no-repeat 8% 50%;
+  background-size: 25px;
   font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border: none;
+}
+
+#forkme_banner:hover {
+  background-color: #1883ed;
+}
+
+header {
+  color: #f2f2f2;
 }
 
 #header_wrap {
@@ -237,72 +252,52 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
+  padding: 60px 10px 0px 0px;
 }
 
 #project_title {
   margin: 0;
   color: #fff;
-  font-size: 42px;
+  font-size: 54px;
   font-weight: 700;
-  text-shadow: #111 0px 0px 10px;
 }
 
 #project_tagline {
   color: #fff;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 300;
   background: none;
-  text-shadow: #111 0px 0px 10px;
 }
 
-#downloads {
-  position: absolute;
-  width: 210px;
-  z-index: 10;
-  bottom: -40px;
-  right: 0;
+.downloads {
+  display: block;
+  padding-left: 50px;
+  color: #f2f2f2;
+  position: relative;
   height: 70px;
-  background: url('../images/icon_download.png') no-repeat 0% 90%;
+  background: url(../images/download.svg) no-repeat center left;
+  background-size: 25px 20px;
 }
 
-.zip_download_link {
-  display: block;
-  float: right;
-  width: 90px;
-  height:70px;
-  text-indent: -5000px;
-  overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom left;
+.downloads a {
+  margin-right: 20px;
 }
-
-.tar_download_link {
-  display: block;
-  float: right;
-  width: 90px;
-  height:70px;
-  text-indent: -5000px;
-  overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom right;
-  margin-left: 10px;
-}
-
-.zip_download_link:hover {
-  background: url(../images/sprite_download.png) no-repeat top left;
-}
-
-.tar_download_link:hover {
-  background: url(../images/sprite_download.png) no-repeat top right;
-}
-
-#main_content_wrap {
-  background: #f2f2f2;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
+.downloads a:hover {
+  text-decoration: underline solid #fff;
 }
 
 #main_content {
   padding-top: 40px;
+}
+
+#main_content.inner {
+  background-color: #fff;
+  padding: 70px 100px;
+  box-shadow: 0 0 5px #ebebeb;
+  -webkit-box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  -o-box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  -ms-box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
 }
 
 #footer_wrap {
@@ -315,16 +310,28 @@ Small Device Styles
 
 @media screen and (max-width: 480px) {
   body {
-    font-size:14px;
+    font-size: 13px;
   }
 
-  #downloads {
+  .downloads {
     display: none;
+  }
+
+  .outer {
+    padding: 0;
   }
 
   .inner {
     min-width: 320px;
     max-width: 480px;
+  }
+
+  #header_wrap .inner {
+    padding: 60px 10px;
+  }
+
+  #main_content.inner {
+    padding: 10px;
   }
 
   #project_title {
@@ -359,5 +366,9 @@ Small Device Styles
     min-width: 320px;
     max-width: 480px;
     font-size: 11px;
+  }
+
+  img {
+    ma
   }
 }

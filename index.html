@@ -4,9 +4,13 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="Slate is a responsive theme for GitHub Pages" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,700,700italic' rel='stylesheet' type='text/css'>
 
     <title>Slate : A responsive theme for GitHub Pages</title>
   </head>
@@ -20,17 +24,21 @@
 
           <h1 id="project_title">Slate</h1>
           <h2 id="project_tagline">A responsive theme for GitHub Pages</h2>
-
-          <section id="downloads">
-            <a class="zip_download_link" href="#">Download this project as a .zip file</a>
-            <a class="tar_download_link" href="#">Download this project as a tar.gz file</a>
-          </section>
         </header>
     </div>
+
+    <section class="outer">
+        <div class="downloads inner">
+          <a class="zip_download_link" href="#">Download .zip</a>
+          <a class="tar_download_link" href="#">Download .tar.gz</a>
+        </div>
+    </section>
+
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+
         <h1>A simple, legible layout.</h1>
         <p>Slate is a simple theme that I created for the <a href="http://pages.github.com">GitHub Pages automatic generator</a>. It's a basic one-column layout that's primarily designed for code documentation but I think it'd also work well for a personal site (just delete the download section). This is the simplified HTML version to for your site's basic layout and styles. Clone these files and replace this content to get the ball rolling.</p>
 
@@ -117,8 +125,7 @@ end
 
 <p>How about we throw some angle braces and ampersands in there?</p>
 
-<pre><code>
-&lt;div class="footer"&gt;
+<pre><code>&lt;div class="footer"&gt;
 &amp;copy; 2013 Zorg Industries
 &lt;/div&gt;
 </code></pre>
@@ -166,7 +173,7 @@ end
           <td>Nearly as awesome</td>
         </tr>
         </table>
-        
+
       </section>
     </div>
 
