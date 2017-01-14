@@ -308,6 +308,12 @@ header {
 Small Device Styles
 *******************************************************************************/
 
+@media screen and (max-width: 992px) {
+  img {
+    max-width: 100%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   body {
     font-size: 13px;
@@ -366,9 +372,5 @@ Small Device Styles
     min-width: 320px;
     max-width: 480px;
     font-size: 11px;
-  }
-
-  img {
-    ma
   }
 }
